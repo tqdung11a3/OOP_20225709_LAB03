@@ -8,7 +8,10 @@ public class DigitalVideoDisc {
 	private int length;
 	private float cost;
 	
-	
+	public DigitalVideoDisc(String title) {
+		super();
+		this.title = title;
+	}
 	
 	
 	public DigitalVideoDisc(String title) {
