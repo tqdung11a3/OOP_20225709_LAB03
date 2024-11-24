@@ -83,6 +83,8 @@ public class DigitalVideoDisc {
 		this.cost = cost;
 	}
 	
-	
+	public String toString() {
+        return "DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + String.format("%.2f", cost) + " $";
+    }
 	
 }
