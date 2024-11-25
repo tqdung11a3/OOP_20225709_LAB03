@@ -1,0 +1,10 @@
+1. Java là ngôn ngữ lập trình "Pass by Value" hay "Pass by Reference"? 
+- Với biến kiểu nguyên thủy, giá trị của biến được truyền vào phương thức.
+- Với đối tượng, giá trị của tham chiếu được truyền vào, cho phép thay đổi trạng thái của đối tượng nhưng không thể thay đổi tham chiếu gốc.
+
+2. Sau khi gọi phương thức swap(jungleDVD, cinderellaDVD), tại sao tiêu đề của hai đối tượng này vẫn giữ nguyên?
+- Vì trong Java, tham số được truyền vào phương thức là giá trị của đối tượng, không phải là tham chiếu đến đối tượng. Khi ta thay đổi giá trị của tham số bên trong phương thức,việc này không ảnh hưởng đến giá trị của các đối tượng gốc.
+
+3. Sau khi gọi phương thức changeTitle(jungleDVD, cinderellaDVD.getTitle()), tại sao tiêu đề của JungleDVD lại bị thay đổi?
+- Vì trong phương thức changeTitle, ta thay đổi trực tiếp trên đối tượng dvd bằng câu dvd.setTitle(title).Nó ảnh hưởng trực tiếp đến đối tượng gốc đang được truyền vào phương thức. 
+
